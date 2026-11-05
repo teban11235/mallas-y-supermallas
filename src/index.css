@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes dashFlowClockwise {
+  to {
+    stroke-dashoffset: -48;
+  }
+}
+
+@keyframes dashFlowCounter {
+  to {
+    stroke-dashoffset: 48;
+  }
+}
+
+.animate-flow-cw {
+  animation: dashFlowClockwise 1.8s linear infinite;
+}
+
+.animate-flow-ccw {
+  animation: dashFlowCounter 1.8s linear infinite;
+}
+
+.schematic-grid {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-flow-cw,
+  .animate-flow-ccw {
+    animation: none;
+  }
+}

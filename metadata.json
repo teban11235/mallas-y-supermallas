@@ -1,0 +1,6 @@
+{
+  "name": "Circuitos Eléctricos: Análisis de Mallas y Supermallas",
+  "description": "Recurso educativo interactivo para el estudio del análisis de lazo (mallas), fuentes de corriente y supermallas en corriente continua. Docente: Esteban Briceño Sánchez.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
