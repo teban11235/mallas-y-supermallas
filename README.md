@@ -1,20 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Circuitos Eléctricos: Análisis de Mallas y Supermallas
 
-# Run and deploy your AI Studio app
+Recurso educativo interactivo para el estudio del análisis de lazo (mallas), fuentes de corriente y supermallas en corriente continua.
 
-This contains everything you need to run your app locally.
+**Docente:** Esteban Briceño Sánchez
 
-View your app in AI Studio: https://ai.studio/apps/cb13a32a-1a8d-4a32-ac11-439112a1c199
+## Sitio Web
+- [Abrir Recurso Interactivo (GitHub Pages)](https://teban11235.github.io/mallas-y-supermallas/)
 
-## Run Locally
+## Ejecutar localmente
 
-**Prerequisites:**  Node.js
+**Requisitos previos:** Node.js (v18+)
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+2. Iniciar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+3. Construir para producción:
+   ```bash
+   npm run build
+   ```
